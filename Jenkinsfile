@@ -10,9 +10,9 @@ pipeline {
     }
     environment {
             AWS_DEFAULT_REGION = 'us-east-1'
-            SERVICE_NAME = 'vote'
-            TASK_FAMILY = 'vote-fargate'
-            ECS_CLUSTER = 'vote-app'
+            SERVICE_NAME = 'vote-service'
+            TASK_FAMILY = 'vote-task'
+            ECS_CLUSTER = 'vote'
     }
     stages {
       stage('Git Checkout') {
